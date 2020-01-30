@@ -37,18 +37,19 @@ class Song
     genre_count = {} # new hash
     #@@genre_count.each {|genre| genre_count[genre] += 1}  # value key set currently doesn't work
     @@genre_count.each do |genre|
-    if genre_count[genre]
-      genre_count[genre] += 1
-    else
-      genre_count[genre] = 1
-    end
+      if genre_count[genre]
+        genre_count[genre] += 1
+      else
+        genre_count[genre] = 1
+      end
     genre_count
   end 
   
   #same as previous method, but for artist_count
   def self.artist_count
     artist_count = {}
-    @@artist.each 
+    @@artist.each do |artist|
+      
     end
     artist_count
   end   
