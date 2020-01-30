@@ -11,7 +11,7 @@ class Song
     @artist = artist
     @genre = genre
     @@count += 1 
-    # for artist and genre shovel onto unique arrays for each 
+    # for artist and genre return a unique array for each of existing songs
     @@artists << artist 
     @@genres << genre 
   end
