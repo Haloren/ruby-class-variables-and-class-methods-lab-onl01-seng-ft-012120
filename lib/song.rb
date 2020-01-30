@@ -36,14 +36,14 @@ class Song
   def self.genre_count
     genre_count = {} # new hash
     genre_count.each {|genre| genre_count[genre] += 1} # value key set 
-    return genre_count
+    genre_count
   end 
   
   #same as previous method, but for artist_count
   def self.artist_count
     artist_count = {} 
     artist_count.each {|artist| artist_count[artist] += 1} 
-    return artist_count
+    artist_count
   end   
   
 end 
