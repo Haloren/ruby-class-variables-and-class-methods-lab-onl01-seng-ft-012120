@@ -12,7 +12,7 @@ class Song
     @genre = genre
     @@count += 1 
     @@artists << artist 
-    @@generes << genere 
+    @@generes << genre 
   end
 
   # method count
