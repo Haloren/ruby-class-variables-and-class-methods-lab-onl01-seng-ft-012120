@@ -35,7 +35,12 @@ class Song
   # method genre_count, returns a hash: keys are genre_count => value that is a count of the number of songs in the genre
   def self.genre_count
     genre_count = {} # new hash
-    @@genre_count.each {|genre| genre_count[genre] += 1} # value key set 
+    #@@genre_count.each {|genre| genre_count[genre] += 1}  # value key set currently doesn't work
+    @@genre_count.each do |genre|
+    if genre_count[genre]
+      genre_count[genre] += 1
+    else
+      genre_count[genre] = 1
     end
     genre_count
   end 
@@ -43,7 +48,7 @@ class Song
   #same as previous method, but for artist_count
   def self.artist_count
     artist_count = {}
-    @@artist_count.each {|artist| artist_count[artist] += 1} 
+    @@artist.each 
     end
     artist_count
   end   
